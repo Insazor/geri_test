@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 import Hello from '@/pages/Hello';
 
 function App() {
-  if (window.location.pathname === '/hello') {
+  if (window.location.pathname.endsWith('/hello')) {
     return <Hello />;
   }
 
